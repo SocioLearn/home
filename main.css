@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+nav .logo img{
+    width: 300px;
+}
+
+
+nav ul .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+nav ul li{
+    list-style: none;
+    display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+    display: flex;
+    margin: 30px 30px;
+    color: black;
+    font-size: 19px;
+}
+
+.hero h1{
+    font-size: 120px;
+    margin-top: px;
+    text-align: left;
+    padding: 20px;
+    width: 90%;
+    line-height: 140px;
+
+}
+
+
+
+.hero img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 800px;
+}
+
+.services h1{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 120px;
+}
+.services h1 span{
+    color: rgb(0, 227, 227);
+}
+.cards{
+    width: 80%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.card{
+    width: 450px;
+    height: 240px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(106, 106, 106);
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 130px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.right-description{
+    padding: 20px;
+}
+.right-description h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(0, 229, 255);
+}
+.right-description p{
+    font-size: 17px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 760px) {
+    .card{
+        width: 500px;
+        height: 300px;
+    }
+    .cards{
+        width: 100%;
+        margin: auto;
+    }
+    .right img{
+        width: 500px;
+        margin-top: 50px;
+    }
+    .hero{
+        flex-wrap: wrap;
+    }
+}
+
+.get-started{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+.get-started img{
+    width: 800px;
+}
+
+.get-started .btn{
+    color: black;
+}
+.get-started h1{
+    font-size: 50px;
+}
+
+
+.heading p{
+    width: 30%;
+    margin-left: 1000px;
+    line-height: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.waitlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.waitlist h1{
+    margin-top: 150px;
+    font-size: 100px;
+}
+.waitlist h1 span{
+    color: rgb(1, 202, 237);
+}
+form input{
+    width: 300px;
+    padding: 25px;
+    background-color: rgb(169, 242, 255);
+    border: none;
+    border-radius: 50px;
+    color: rgb(28, 28, 28);
+    font-size: 20px;
+}
+
+input::placeholder{
+    color: rgb(28, 28, 28);
+    font-size: 20px;
+    text-align: left;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form button{
+    padding: 15px;
+    background-color: rgb(12, 204, 211);
+    border: none;
+    border-radius: 50px;
+    color: rgb(38, 38, 38);
+    font-size: 20px;
+    
+}
