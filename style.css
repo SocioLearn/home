@@ -1,481 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 
-html{
-    scroll-behavior: smooth;
-}
 body{
     font-family: 'Roboto', sans-serif;
 }
 nav{
-    width: 100%;
-
-}
-
-nav .logo img{
-    width: 300px;
-}
-
-nav ul{
     display: flex;
-    overflow: auto;
     justify-content: space-between;
-}
-
-nav ul .links{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin: auto;
+}
+nav ul{
+    overflow: hidden;
+    display: flex;
 }
 nav ul li{
     list-style: none;
-    display: flex;
 }
 nav ul li a{
-    text-decoration: none;
-    display: flex;
-    margin: 30px 30px;
+    margin: 50px;
     color: black;
-    font-size: 19px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav .logo img{
+    width: 100px;
+    margin: 10px;
 }
 
-.home{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-}
-.home img{
-    width: 700px;
-}
-.left{
+.pre-register{
     padding: 40px;
 }
-.left h1{
-    font-size: 70px;
-}
-.left h1 span{
-    color: rgb(64, 0, 255);
-}
-.left p{
-    font-size: 26px;
-    padding: 10px;
-    line-height: 40px;
-}
-.left a{
-    margin: 3px;
-    padding: 13px;
-    text-decoration: none;
-    background-color: rgb(106, 0, 255);
-    border-radius: 28px;
+.pre-register button{
+    padding: 17px;
+    width: 200px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
     color: white;
-}
-.about{
-    display: flex;
-}
-.about .left img{
-    width: 600px;
-    margin-top: 80px;
-}
-.about .right{
-    margin-top: 70px;
-}
-.about .right h1{
-    margin-top: 100px;
-    font-size: 70px;
-}
-.right h1 span{
-    color: rgb(64, 0, 255);
-}
-.right p{
-    width: 85%;
-    font-size: 20px;
-    line-height: 36px;
-}
-
-
-@media screen and (max-width: 760px) {
-    .home{
-        flex-wrap: wrap;
-    }
-    .home img{
-        width: 400px;
-        padding: 50px;
-    }
-    .about img{
-        display: none;
-    }
-    .about{
-        margin-top: -100px;
-        flex-wrap: wrap;
-        padding: 30px;
-    }
-    .about .right{
-        margin-top: 0px;
-    }
+    background-color: #1b1944;
 }
 
 .hero{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
-
-}
-.right img{
-    width: 700px;
-}
-
-.left{
-    margin: 50px;
-}
-.left h1{
-    font-size: 70px;
-}
-.left span{
-    color: rgb(0, 230, 230);
-}
-.left p{
-    font-size: 23px;
-    line-height: 40px;   
-}
-.left .btn{
-    margin-top: 20px;
-    color: rgb(18, 18, 18);
-    cursor: pointer;
-}
-.what-we-offer h1{
-    text-align: center;
-    font-size: 70px;
-    margin-top: 150px;
-}
-.what-we-offer h1 span{
-    color: rgb(76, 0, 255);
-}
-.cards{
-    width: 80%;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding-top: 50px;
-}
-
-.card{
-    width: 450px;
-    height: 240px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    margin: 40px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px rgb(106, 106, 106);
-    justify-content: center;
-    align-items: center;
-}
-.card img{
-    width: 130px;
-    padding: 20px;
-    border-radius: 10px;
-}
-.right-description{
-    padding: 20px;
-}
-.right-description h2{
-    font-size: 40px;
-    font-weight: 800;
-    color: rgb(85, 0, 255);
-}
-.right-description p{
-    font-size: 17px;
-    margin-top: 20px;
-    line-height: 30px;
-}
-
-@media screen and (max-width: 760px) {
-    .card{
-        width: 500px;
-        height: 300px;
-    }
-    .cards{
-        width: 100%;
-        margin: auto;
-    }
-    .right img{
-        width: 500px;
-        margin-top: 50px;
-    }
-    .hero{
-        flex-wrap: wrap;
-    }
-}
-
-.get-started{
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+}
+.hero h1{
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+.hero p{
+    font-size: 20px;
+}
+.pre-register-3{
+    padding: 17px;
+    width: 200px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #575ebc;
+}
+.pre-register-2 button{
+    padding: 17px;
+    width: 200px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #1b1944;
+}
+.about{
     margin: auto;
-}
-.get-started img{
-    width: 800px;
-}
-
-.get-started .btn{
-    color: black;
-}
-.get-started h1{
-    font-size: 50px;
-}
-
-#note{
     text-align: center;
-    font-size: 18px;
-    margin-top: 50px;
 }
-
-#open{
-    text-align: center;
+.about h1{
     font-size: 70px;
-    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
 }
-#open span{
-    color: rgb(98, 0, 255);
+.about p{
+    width: 70%;
+    margin: auto;
+    font-size: 21px;
+    line-height: 50px;
 }
-.open-positions{
+.about a{
+    display: none;
+}
+
+.careers h1{
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;  
+}
+.cards{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.openings{
-    width: 400px;
-    margin: 30px;
-    padding: 20px;
-    height: max-content;
-    border-radius: 20px;
-}
-.btns, .btns-2{
-    width: 100px;
-    margin: 10px;
-    padding: 10px;
-    border: none;
-    background-color: rgb(235, 212, 255);
-    border-radius: 20px;
-    margin-top: 20px;
-}
-.btns-2{
-    background-color: rgb(255, 219, 225);
-}
-
-.main{
-    display: flex;
-    flex-wrap: wrap;
-}
-.cards-2{
-    display: flex;
     flex-wrap: wrap;
     width: 70%;
-    justify-content: center;
-    align-items: center;
     margin: auto;
 }
-.latest{
-    display: flex;
-    margin-top: 50px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    overflow-y: auto;
-}
-.cards-w{
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    height: 120px;
-    box-shadow: 2px 2px 10px rgb(177, 177, 177);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-}
-.cards-w img{
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cards-w h2{
-    font-size: 20px;
-}
-.cards-w p{
-    font-size: 15px;
-    line-height: 24px;
-}
-.image-button{
-    display: flex;
-    flex-direction: column;
-}
-.image-button img{
-    width: 150px;
-}
-.image-button a{
-    padding-left: 20px;
-    margin-top: -20px;
-}
-.latest a{
+.cards a{
     text-decoration: none;
     color: black;
 }
-
-.heading-text{
-    margin-left: 0px;
+.card{
+    width: 250px;
+    height: 160px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    margin: 30px;
 }
-.heading-text h2{
-    font-size: 30px;
-}
-.heading-text p{
-    margin-top: 20px;
-    line-height: 25px;
-    padding: 5px;
-}
-
-
-@media screen and (max-width: 760px) {
-    .cards-2{
-        width: 100%;
-    }
-}
-
-.cards-3{
-    width: 100%;
+.card img{
+    width: 100px;
     display: flex;
-    margin-top: 50px;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    margin: auto;   
+}
+.card p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+.join-the-waitlist h1{
+    text-align: center;
 }
 
-.card-2{
-    width: 400px;
-    height: 270px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    margin: 40px;
-    border-radius: 20px;
-    display: flex;
-    border: 8px solid aqua;
-    flex-direction: column;
-}
-.card-2:hover{
-    border: 8px solid rgb(34, 0, 255);
-    transition: .5s;
-}
-.card-2 h1, .card-2 p{
-    padding-left: 20px;
-}
-.card-2 p{
-    line-height: 30px;
-    padding: 20px;
-    font-size: 18px;
-}
-
-
-.entrepreneurship{
-    display: flex;
-}
-
-.card-3{
-    width: 350px;
-    height: 200px;
-    border: 6px solid aqua;
-    background-color: rgb(255, 255, 255);
-    margin: 40px;
-    border-radius: 20px;
-    display: flex;
-    padding: 5px;
-    flex-direction: column;
-}
-.card-3:hover{
-    border: 6px solid rgb(0, 181, 181);
-    transition: 0.3s;
-}
-.category{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-}
-.category p{
-    color: gray;
-}
-.title h1{
-    font-size: 23px;
-    line-height: 35px;
-    padding-left: 20px;
-    padding-top: 10px;
-    color: rgb(36, 36, 36);
-}
-@media screen and (max-width: 760px) {
-    
-.entrepreneurship{
-    flex-wrap: wrap;
-}
-
-}
-
-.title a{
-    text-decoration: none;
-}
-
-.openings{
-    border: 5px solid rgb(106, 0, 255);
-}
-
-.waitlist{
+form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.waitlist h1{
-    margin-top: 150px;
-    font-size: 70px;
-}
-.waitlist h1 span{
-    color: rgb(55, 0, 255);
-}
+
 form input{
     width: 300px;
-    padding: 25px;
-    background-color: rgb(188, 169, 255);
+    padding: 24px;
     border: none;
-    border-radius: 50px;
-    color: rgb(28, 28, 28);
-    font-size: 20px;
+    background-color: rgb(235, 235, 235);
+    margin: 20px;
+    border-radius: 10px;
+    color: black;
 }
 
-input::placeholder{
-    color: rgb(28, 28, 28);
-    font-size: 20px;
-    text-align: left;
+form input::placeholder{
+    color: rgb(101, 101, 101);
+    font-size: 15px;
 }
-
 form input:focus{
-    outline: none;
+    outline: black;
 }
 
-form button{
-    padding: 15px;
-    background-color: rgb(85, 38, 255);
-    border: none;
-    border-radius: 50px;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+
+
+
+@media screen and (max-width: 760px) {
+    .hero h1{
+        font-size: 40px;
+        padding: 20px;
+    } 
+    .hero p{
+        font-size: 16px;
+        padding: 20px;
+        margin-top: -40px;
+        line-height: 40px;
+    }
+    .pre-register-2 button{
+        margin-left: 20px;
+    }
+    .about h1{
+        font-size: 50px;
+    }
+    .about p{
+        width: 90%;
+        margin: auto;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .about a{
+        display: block;
+    }
+    .careers h1{
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;  
     
-}
+}}
+
+
