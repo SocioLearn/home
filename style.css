@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -79,23 +82,22 @@ nav .logo img{
     background-color: #1b1944;
 }
 .about{
-    margin: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about .right-content {
+    width: 40%;
 }
 .about h1{
     font-size: 70px;
     font-family: 'Poppins', sans-serif;
 }
 .about p{
-    width: 70%;
-    margin: auto;
-    font-size: 21px;
-    line-height: 50px;
+    line-height: 40px;
 }
-.about a{
-    display: none;
-}
-
 .careers h1{
     font-size: 70px;
     font-family: 'Poppins', sans-serif;
@@ -105,8 +107,11 @@ nav .logo img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 70%;
+    width: 90%;
     margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 .cards a{
     text-decoration: none;
@@ -114,8 +119,8 @@ nav .logo img{
 }
 .card{
     width: 250px;
-    height: 160px;
-    background-color: #eeeeee;
+    height: max-content;
+    background-color: #e0feff;
     border-radius: 20px;
     margin: 30px;
 }
@@ -132,8 +137,19 @@ nav .logo img{
     font-weight: bold;
     margin-top: 7px;
 }
-.join-the-waitlist h1{
+.card h3{
+    line-height: 25px;
+}
+.join-the-waitlist h1,p{
     text-align: center;
+}
+.join-the-waitlist h1{
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; 
+}
+.join-the-waitlist p{
+    font-size: 18px;
 }
 
 form{
@@ -160,9 +176,16 @@ form input::placeholder{
 form input:focus{
     outline: black;
 }
-
-
-
+.product{
+    margin-top: 150px;
+}
+.product h1{
+    text-align: center;
+}
+#head{
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+}
 
 @media screen and (max-width: 760px) {
     .hero h1{
@@ -194,7 +217,11 @@ form input:focus{
         font-size: 30px;
         font-family: 'Poppins', sans-serif;
         text-align: center;  
-    
-}}
+    }
+    .about .right-content {
+        width: 90%;
+    }
+
+}
 
 
